@@ -10,39 +10,36 @@
     tools:context=".EstadisticaActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="88dp"
+        android:id="@+id/logoNegro"
+        android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@tools:sample/avatars"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintVertical_bias="0.055"
         app:srcCompat="@drawable/logo_ecorecicla_negro" />
 
     <ImageView
-        android:id="@+id/imageFlechaAtras"
+        android:id="@+id/atrasFlecha"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@tools:sample/avatars"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/flecha_atras" />
 
     <ImageView
-        android:id="@+id/imageHome"
+        android:id="@+id/logoHome"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@tools:sample/avatars"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"

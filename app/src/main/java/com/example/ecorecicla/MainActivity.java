@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         recuperarCont=findViewById(R.id.textViewOlvCont);
         registrarUsuario=findViewById(R.id.textViewNuevoRegist);
 
-        Intent ingresa=new Intent(getApplicationContext(), HomeActivity.class);
+        Intent ingresa=new Intent(getApplicationContext(),HomeActivity.class);
         Intent olvidarCont=new Intent (getApplicationContext(), RecuperarContrasenaActivity.class);
         Intent registrarUser=new Intent (getApplicationContext(), RegistroUsuarioActivity.class);
 

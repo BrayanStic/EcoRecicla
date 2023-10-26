@@ -18,8 +18,8 @@ public class EstadisticaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_estadistica);
 
-        home=findViewById(R.id.imageHome);
-        atras=findViewById(R.id.imageFlechaAtras);
+        home=findViewById(R.id.logoHome);
+        atras=findViewById(R.id.atrasFlecha);
 
         Intent pantallaPrin=new Intent(getApplicationContext(), HomeActivity.class);
         Intent pantallaAtras=new Intent(getApplicationContext(), HomeActivity.class);
