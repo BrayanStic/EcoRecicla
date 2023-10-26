@@ -4,6 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#E8E6E6"
     tools:context=".CategoriaActivity">
+
+    <ImageView
+        android:id="@+id/logoNegro"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/logo_ecorecicla_negro" />
+
+    <ImageView
+        android:id="@+id/atrasFlecha"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/flecha_atras" />
+
+    <ImageView
+        android:id="@+id/logoHome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/logo_home" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CATEGORÍA"
+        android:textColor="#474545"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+        <ImageView
+            android:id="@+id/imageViewPapel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_papel"
+            app:srcCompat="@drawable/logo_papel"/>
+
+        <Button
+            android:id="@+id/buttonPapel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="#8BC349"
+            android:text="PAPEL"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageViewPlastico"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_plastico" />
+
+        <Button
+            android:id="@+id/buttonPlastico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="#8BC349"
+            android:text="PLÁSTICO"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageViewCarton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_carton" />
+
+        <Button
+            android:id="@+id/buttonCarton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="#8BC349"
+            android:text="CARTÓN"
+            android:textSize="20dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
