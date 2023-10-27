@@ -48,7 +48,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="REGISTRO"
+        android:text="REGISTRO DE ITEM"
         android:textColor="#474545"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -57,5 +57,124 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.178" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Material"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Papel, plastico, carton..."
+            android:inputType="text|textPersonName"
+            android:shadowColor="#070707"
+            android:textColor="#070707"
+            android:textColorHint="#737171"
+            android:textColorLink="#070707"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mes"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextMes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Enero, Febrero, Marzo..."
+            android:inputType="text|textPassword"
+            android:shadowColor="#070707"
+            android:textColor="#070707"
+            android:textColorHint="#737171"
+            android:textColorLink="#070707"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cantidad en Kg"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="0 Kg"
+            android:inputType="text|textEmailAddress"
+            android:shadowColor="#070707"
+            android:textColor="#070707"
+            android:textColorHint="#737171"
+            android:textColorLink="#070707"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Valor en COP"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="$ 0,00"
+            android:inputType="text|textEmailAddress"
+            android:shadowColor="#070707"
+            android:textColor="#070707"
+            android:textColorHint="#737171"
+            android:textColorLink="#070707"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/buttonRegItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#8BC349"
+            android:text="REGISTRAR ITEM"
+            android:textSize="20dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
