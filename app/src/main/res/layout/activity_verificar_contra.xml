@@ -70,13 +70,13 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/editTextCod"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:background="#FFFFFF"
             android:ems="10"
-            android:inputType="text|textPersonName"
+            android:inputType="number|numberSigned"
             android:shadowColor="#070707"
             android:textColor="#070707"
             android:textColorHint="#737171"
@@ -93,13 +93,13 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/editTextTextNewCont"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:background="#FFFFFF"
             android:ems="10"
-            android:inputType="text|textEmailAddress"
+            android:inputType="text|textPassword"
             android:shadowColor="#070707"
             android:textColor="#070707"
             android:textColorHint="#737171"
@@ -122,7 +122,7 @@
             android:layout_marginTop="2dp"
             android:background="#FFFFFF"
             android:ems="10"
-            android:inputType="text|textEmailAddress"
+            android:inputType="text|textPassword"
             android:shadowColor="#070707"
             android:textColor="#070707"
             android:textColorHint="#737171"
