@@ -84,7 +84,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#00BCD4"
                 android:text="MES"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#0E0E0E" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -93,7 +94,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#8BC34A"
                 android:text="ITEM"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#0E0E0E" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -102,7 +104,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#8BC34A"
                 android:text="CANTIDAD (kg)"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#0E0E0E" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -111,7 +114,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#8BC34A"
                 android:text="VALOR ($COP)"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#0E0E0E" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -120,7 +124,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#8BC34A"
                 android:text="%"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#0E0E0E" />
         </TableRow>
 
         <TableRow
@@ -314,17 +319,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.454" />
 
-        <EditText
+        <TextView
             android:id="@+id/editTextText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#8BC34A"
+            android:layout_marginTop="5dp"
+            android:background="#F4F3E9"
             android:ems="10"
             android:gravity="center"
             android:inputType="text"
-            android:minHeight="48dp"
             android:text="33,333"
             android:textColor="#101010"
+            android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -335,6 +341,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Total de kg reciclado:"
             android:textColor="#474545"
             android:textStyle="bold"
@@ -345,17 +352,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.567" />
 
-        <EditText
+        <TextView
             android:id="@+id/editTextText3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#8BC34A"
+            android:layout_marginTop="5dp"
+            android:background="#F4F3E9"
             android:ems="10"
             android:gravity="center"
             android:inputType="text"
-            android:minHeight="48dp"
             android:text="100"
             android:textColor="#101010"
+            android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -367,6 +375,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Total de ganancias obtenidas:"
             android:textColor="#474545"
             android:textStyle="bold"
@@ -377,17 +386,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.672" />
 
-        <EditText
+        <TextView
             android:id="@+id/editTextText4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#8BC34A"
+            android:layout_marginTop="5dp"
+            android:background="#F4F3E9"
             android:ems="10"
             android:gravity="center"
             android:inputType="text"
-            android:minHeight="48dp"
             android:text="75.000"
             android:textColor="#101010"
+            android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"

@@ -4,6 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#E8E6E6"
     tools:context=".RecuperarContrasenaActivity">
+
+    <ImageView
+        android:id="@+id/logoNegro"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/logo_ecorecicla_negro" />
+
+    <ImageView
+        android:id="@+id/atrasFlecha"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/flecha_atras" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="Ingresa los siguientes datos para restablecer su contraseña."
+        android:textColor="#474545"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitulo">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar Usuario"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="text|textPersonName"
+            android:shadowColor="#070707"
+            android:textColor="#070707"
+            android:textColorHint="#737171"
+            android:textColorLink="#070707"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ingresar correo electronico "
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="text|textEmailAddress"
+            android:shadowColor="#070707"
+            android:textColor="#070707"
+            android:textColorHint="#737171"
+            android:textColorLink="#070707"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="I´m not a robot"
+            android:textColor="#3F51B5" />
+
+        <Button
+            android:id="@+id/buttonRestCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="0dp"
+            android:backgroundTint="#8BC349"
+            android:text="RESTABLECER CONTRASEÑA"
+            android:textSize="18dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

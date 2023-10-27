@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class RecuperarContrasenaActivity extends AppCompatActivity {
+public class VerificarContraActivity extends AppCompatActivity {
 
     ImageView atras;
     Button recuperar;
@@ -16,13 +16,13 @@ public class RecuperarContrasenaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recuperar_contrasena);
+        setContentView(R.layout.activity_verificar_contra);
 
         atras=findViewById(R.id.atrasFlecha);
         recuperar=findViewById(R.id.buttonRestCont);
 
         Intent flechaAtras=new Intent(getApplicationContext(),MainActivity.class);
-        Intent newUser=new Intent(getApplicationContext(), VerificarContraActivity.class);
+        Intent newUser=new Intent(getApplicationContext(), MainActivity.class);
 
         atras.setOnClickListener(new View.OnClickListener() {
             @Override
