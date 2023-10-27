@@ -58,4 +58,82 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.178" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        app:cardBackgroundColor="#DDEFC8"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_papel" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:text="No tirar el papel, sino reciclarlo después de utilizar ambas caras. Comprar papel reciclado y no procesado con cloro para su blanqueo. Destinar una cesta para la recolección de papel"
+            android:textColor="#2B2929" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#DDEFC8"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_plastico" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:text="Evita comprar botellas de plástico.  En el mundo se consumen alrededor de 1 millón de botellas de plástico cada minuto, según cifras del movimiento global Break Free From Plastic."
+            android:textColor="#2B2929" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#DDEFC8"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/CardView2">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_carton" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:text="Al igual que el papel, el cartón está hecho de fibras de madera biodegradables, llamadas celulosas. Estas fibras son 100% reciclables y no son tóxicas. Por lo tanto, es posible utilizarlas con fines energéticos, reciclándolas o quemándolas, o compostándolas."
+            android:textColor="#2B2929" />
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
