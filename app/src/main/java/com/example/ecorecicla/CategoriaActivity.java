@@ -28,7 +28,7 @@ public class CategoriaActivity extends AppCompatActivity {
         atras=findViewById(R.id.atrasFlecha);
 
         Intent pantallaPapel=new Intent(getApplicationContext(), PapelRegistro.class);
-        Intent pantallaPlastico=new Intent(getApplicationContext(), PlasticoRegistro.class);
+        Intent pantallaPlastico=new Intent(getApplicationContext(), PlasticoRegister.class);
         Intent pantallaCarton= new Intent(getApplicationContext(), CartonRegistro.class);
         Intent pantallaPrin=new Intent(getApplicationContext(), HomeActivity.class);
         Intent pantallaAtras=new Intent(getApplicationContext(), HomeActivity.class);
@@ -111,7 +111,7 @@ public class CategoriaActivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_plastico_registro);
+            setContentView(R.layout.activity_plastico_register);
         }
     }
 }

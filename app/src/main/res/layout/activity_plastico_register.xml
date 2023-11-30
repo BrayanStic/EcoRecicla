@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="8dp"
     android:background="#E8E6E6"
-    tools:context=".PlasticoRegistro">
+    tools:context=".PlasticoRegister">
 
     <ImageView
         android:id="@+id/logoNegro"
@@ -62,7 +62,7 @@
         android:id="@+id/imageViewPlastico"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/logo_papel"
+        android:src="@drawable/logo_plastico"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
