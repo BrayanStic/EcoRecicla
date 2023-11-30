@@ -80,10 +80,10 @@ public class PapelRegistro extends AppCompatActivity {
     }
 
     public void savePapel (Papel consume){
-        File fileElectricity = new File(getFilesDir(), "electricity.txt");
+        File filePapel = new File(getFilesDir(), "papel.txt");
 
         try {
-            FileWriter writer = new FileWriter(fileElectricity, true);
+            FileWriter writer = new FileWriter(filePapel, true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(
                     consume.getQuantity() + "," +

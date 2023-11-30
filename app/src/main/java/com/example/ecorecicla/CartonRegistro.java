@@ -68,7 +68,7 @@ public class CartonRegistro extends AppCompatActivity {
                     int quantityCarton = Integer.parseInt(quantity.getText().toString());
                     int priceCarton = Integer.parseInt(price.getText().toString());
                     String monthCarton = months.getText().toString();
-                    Papel consume = new Papel(quantityCarton, priceCarton, monthCarton, idUser);
+                    Carton consume = new Carton(quantityCarton, priceCarton, monthCarton, idUser);
                     saveCarton(consume);
                     cleanView();
                     Toast.makeText(getApplicationContext(),
@@ -78,10 +78,10 @@ public class CartonRegistro extends AppCompatActivity {
         });
     }
     public void saveCarton (Carton consume){
-        File fileElectricity= new File(getFilesDir(),"electricity.txt");
+        File fileCarton= new File(getFilesDir(),"carton.txt");
 
         try {
-            FileWriter writer= new FileWriter(fileElectricity,true);
+            FileWriter writer= new FileWriter(fileCarton,true);
             BufferedWriter bufferedWriter= new BufferedWriter(writer);
             bufferedWriter.write(
                     consume.getQuantity()+","+

@@ -77,10 +77,10 @@ public class PlasticoRegistro extends AppCompatActivity {
         });
     }
     public void savePlastico (Plastico consume){
-        File fileElectricity = new File(getFilesDir(), "electricity.txt");
+        File filePlastico = new File(getFilesDir(), "plastico.txt");
 
         try {
-            FileWriter writer = new FileWriter(fileElectricity, true);
+            FileWriter writer = new FileWriter(filePlastico, true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(
                     consume.getQuantity() + "," +
