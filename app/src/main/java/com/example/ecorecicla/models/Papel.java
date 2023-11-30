@@ -1,26 +1,14 @@
 package com.example.ecorecicla.models;
 
 public class Papel {
+    private int quantity, price;
     private String month,idUser;
-    private int quantity,price;
 
-    public Papel(String month, String idUser, int quantity, int price) {
-        this.month = month;
-        this.idUser = idUser;
+    public Papel(int quantity, int price, String month, String idUser) {
         this.quantity = quantity;
         this.price = price;
-    }
-
-    public String getMonth() {
-        return month;
-    }
-
-    public void setMonth(String month) {
         this.month = month;
-    }
-
-    public String getIdUser() {
-        return idUser;
+        this.idUser=idUser;
     }
 
     public int getQuantity() {
@@ -37,5 +25,17 @@ public class Papel {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getIdUser() {
+        return idUser;
     }
 }

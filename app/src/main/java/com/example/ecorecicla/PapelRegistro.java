@@ -40,7 +40,7 @@ public class PapelRegistro extends AppCompatActivity {
         atras = findViewById(R.id.atrasFlecha);
 
         Intent pantallaPrin = new Intent(getApplicationContext(), HomeActivity.class);
-        Intent pantallaAtras = new Intent(getApplicationContext(), HomeActivity.class);
+        Intent pantallaAtras = new Intent(getApplicationContext(), CategoriaActivity.class);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override

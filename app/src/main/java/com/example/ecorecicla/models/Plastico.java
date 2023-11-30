@@ -4,7 +4,7 @@ public class Plastico {
     private int quantity, price;
     private String month,idUser;
 
-    public Plastico(int quantity, int price, String month, String idUser) {
+    public Plastico (int quantity, int price, String month, String idUser) {
         this.quantity = quantity;
         this.price = price;
         this.month = month;

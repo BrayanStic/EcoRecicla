@@ -55,14 +55,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.178" />
-
     <ImageView
         android:id="@+id/imageViewCarton"
         android:layout_width="80dp"
-        android:layout_height="100dp"
-        android:src="@drawable/logo_carton"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="158dp" />
+        android:layout_height="80dp"
+        android:src="@drawable/logo_papel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_carton"
+        tools:layout_editor_absoluteY="175dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -87,7 +89,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextMes"
+            android:id="@+id/mesCarton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
@@ -111,7 +113,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextCantidad"
+            android:id="@+id/cantidadCarton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
@@ -124,6 +126,7 @@
             android:textColorHint="#737171"
             android:textColorLink="#070707"
             android:textSize="20sp" />
+
         <TextView
             android:id="@+id/textView27"
             android:layout_width="match_parent"
@@ -134,7 +137,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextValor"
+            android:id="@+id/valorCarton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
@@ -150,7 +153,7 @@
 
 
         <Button
-            android:id="@+id/buttonRegItem"
+            android:id="@+id/registerCarton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
