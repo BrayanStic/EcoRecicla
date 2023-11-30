@@ -64,10 +64,10 @@ public class PlasticoRegistro extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),
                             "Todos los campos deben estar completos", Toast.LENGTH_LONG).show();
                 } else {
-                    int quantityPapel = Integer.parseInt(quantity.getText().toString());
-                    int pricePapel = Integer.parseInt(price.getText().toString());
-                    String monthPapel = months.getText().toString();
-                    Papel consume = new Papel(quantityPapel, pricePapel, monthPapel, idUser);
+                    int quantityPlastico = Integer.parseInt(quantity.getText().toString());
+                    int pricePlastico = Integer.parseInt(price.getText().toString());
+                    String monthPlastico = months.getText().toString();
+                    Papel consume = new Papel(quantityPlastico, pricePlastico, monthPlastico, idUser);
                     savePlastico(consume);
                     cleanView();
                     Toast.makeText(getApplicationContext(),

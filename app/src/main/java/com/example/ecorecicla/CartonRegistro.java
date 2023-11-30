@@ -65,11 +65,11 @@ public class CartonRegistro extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),
                             "Todos los campos deben estar completos", Toast.LENGTH_LONG).show();
                 } else {
-                    int quantityPapel = Integer.parseInt(quantity.getText().toString());
-                    int pricePapel = Integer.parseInt(price.getText().toString());
-                    String monthPapel = months.getText().toString();
-                    Papel consume = new Papel(quantityPapel, pricePapel, monthPapel, idUser);
-                    savePlastico(consume);
+                    int quantityCarton = Integer.parseInt(quantity.getText().toString());
+                    int priceCarton = Integer.parseInt(price.getText().toString());
+                    String monthCarton = months.getText().toString();
+                    Papel consume = new Papel(quantityCarton, priceCarton, monthCarton, idUser);
+                    saveCarton(consume);
                     cleanView();
                     Toast.makeText(getApplicationContext(),
                             "Registro del consumo exitoso", Toast.LENGTH_LONG).show();
@@ -77,7 +77,7 @@ public class CartonRegistro extends AppCompatActivity {
             }
         });
     }
-    public void savePlastico (Carton consume){
+    public void saveCarton (Carton consume){
         File fileElectricity= new File(getFilesDir(),"electricity.txt");
 
         try {
