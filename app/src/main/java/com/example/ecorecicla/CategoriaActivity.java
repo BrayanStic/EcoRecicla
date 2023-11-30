@@ -27,49 +27,66 @@ public class CategoriaActivity extends AppCompatActivity {
         home=findViewById(R.id.logoHome);
         atras=findViewById(R.id.atrasFlecha);
 
-        Intent pantallaReg=new Intent(getApplicationContext(), RegistroItemActivity.class);
+        Intent pantallaPapel=new Intent(getApplicationContext(), PapelRegistro.class);
+        Intent pantallaPlastico=new Intent(getApplicationContext(), PlasticoRegistro.class);
+        Intent pantallaCarton= new Intent(getApplicationContext(), CartonRegistro.class);
         Intent pantallaPrin=new Intent(getApplicationContext(), HomeActivity.class);
         Intent pantallaAtras=new Intent(getApplicationContext(), HomeActivity.class);
+
+        Intent receive= getIntent();
+        String id= receive.getStringExtra("idUser");
+
+        Intent registerPapel= new Intent(getApplicationContext(),
+                PapelRegistro.class);
+        registerPapel.putExtra("idUser",id);
+
+        Intent registerPlastico= new Intent(getApplicationContext(),
+                PlasticoRegistro.class);
+        registerPlastico.putExtra("idUser",id);
+
+        Intent registerCarton= new Intent(getApplicationContext(),
+                CartonRegistro.class);
+        registerCarton.putExtra("idUser",id);
 
         papel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(pantallaReg);
+                startActivity(pantallaPapel);
             }
         });
 
         papel1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(pantallaReg);
+                startActivity(pantallaPapel);
             }
         });
 
         plastico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(pantallaReg);
+                startActivity(pantallaPlastico);
             }
         });
 
         plastico1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(pantallaReg);
+                startActivity(pantallaPlastico);
             }
         });
 
         carton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(pantallaReg);
+                startActivity(pantallaCarton);
             }
         });
 
         carton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(pantallaReg);
+                startActivity(pantallaCarton);
             }
         });
 
@@ -87,5 +104,14 @@ public class CategoriaActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public static class PlasticoRegistro extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_plastico_registro);
+        }
     }
 }

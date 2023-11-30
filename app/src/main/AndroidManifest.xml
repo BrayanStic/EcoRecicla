@@ -13,6 +13,18 @@
         android:theme="@style/Theme.EcoRecicla"
         tools:targetApi="34">
         <activity
+            android:name=".CartonRegistro"
+            android:exported="false" />
+        <activity
+            android:name=".PlasticoRegistro"
+            android:exported="false" />
+        <activity
+            android:name=".PapelRegistro"
+            android:exported="false" />
+        <activity
+            android:name=".ConsejosActivity$PapelRegistro"
+            android:exported="false" />
+        <activity
             android:name=".VerificarContraActivity"
             android:exported="false" />
         <activity

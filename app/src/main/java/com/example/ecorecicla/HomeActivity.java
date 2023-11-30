@@ -27,6 +27,18 @@ public class HomeActivity extends AppCompatActivity {
         conj=findViewById(R.id.buttonConj);
         exit=findViewById(R.id.imageViewExit);
 
+        Intent registerReciclado= new Intent(getApplicationContext(),
+                CategoriaActivity.class);
+
+        Intent receive= getIntent();
+        String id= receive.getStringExtra("idUser");
+
+        registerReciclado.putExtra("idUser",id);
+
+        Intent statistics_view= new Intent(getApplicationContext(),
+                EstadisticaActivity.class);
+        statistics_view.putExtra("idUser",id);
+
         Intent categoria=new Intent(getApplicationContext(), CategoriaActivity.class);
         Intent estadist=new Intent(getApplicationContext(), EstadisticaActivity.class);
         Intent conjo=new Intent(getApplicationContext(),ConsejosActivity.class);

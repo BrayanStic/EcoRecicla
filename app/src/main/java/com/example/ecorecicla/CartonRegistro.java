@@ -7,14 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class ConsejosActivity extends AppCompatActivity {
+public class CartonRegistro extends AppCompatActivity {
 
-    ImageView home;
-    ImageView atras;
+    ImageView home,atras;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consejos);
+        setContentView(R.layout.activity_carton_registro);
+
+        Intent receive= getIntent();
+        String idUser= receive.getStringExtra("idUser");
 
         home=findViewById(R.id.logoHome);
         atras=findViewById(R.id.atrasFlecha);
@@ -35,14 +38,5 @@ public class ConsejosActivity extends AppCompatActivity {
                 startActivity(pantallaAtras);
             }
         });
-    }
-
-    public static class PapelRegistro extends AppCompatActivity {
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_papel_registro);
-        }
     }
 }
