@@ -61,6 +61,7 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -68,15 +69,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        app:layout_constraintTop_toTopOf="@+id/textView">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewSubt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Promedio de kg reciclado:"
+            android:text="Total de kg Reciclados"
             android:textColor="#474545"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,8 +86,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.454" />
 
+        <ImageView
+            android:id="@+id/imageViewPapel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/logo_papel"
+            app:srcCompat="@drawable/logo_papel" />
+
         <TextView
-            android:id="@+id/editTextText"
+            android:id="@+id/papelReciclado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -103,23 +112,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Total de kg reciclado:"
-            android:textColor="#474545"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.567" />
+        <ImageView
+            android:id="@+id/imageViewPlastico"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/logo_plastico" />
 
         <TextView
-            android:id="@+id/editTextText3"
+            android:id="@+id/plasticoReciclado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -137,23 +138,57 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.617" />
 
+        <ImageView
+            android:id="@+id/imageViewCarton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/logo_carton" />
+
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/cartonReciclado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Total de ganancias obtenidas:"
+            android:layout_marginTop="5dp"
+            android:background="#F4F3E9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="75.000"
+            android:textColor="#101010"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.726" />
+
+        <TextView
+            android:id="@+id/textViewSubt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Dinero Recaudado ($COP)"
             android:textColor="#474545"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.672" />
+            app:layout_constraintVertical_bias="0.454" />
+
+        <ImageView
+            android:id="@+id/imageViewDinero"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/save_money_1611261" />
 
         <TextView
-            android:id="@+id/editTextText4"
+            android:id="@+id/dineroRecaudado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -172,7 +207,11 @@
             app:layout_constraintVertical_bias="0.726" />
 
 
+
+
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
