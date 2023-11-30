@@ -67,7 +67,7 @@ public class PlasticoRegistro extends AppCompatActivity {
                     int quantityPlastico = Integer.parseInt(quantity.getText().toString());
                     int pricePlastico = Integer.parseInt(price.getText().toString());
                     String monthPlastico = months.getText().toString();
-                    Papel consume = new Papel(quantityPlastico, pricePlastico, monthPlastico, idUser);
+                    Plastico consume = new Plastico(quantityPlastico, pricePlastico, monthPlastico, idUser);
                     savePlastico(consume);
                     cleanView();
                     Toast.makeText(getApplicationContext(),
