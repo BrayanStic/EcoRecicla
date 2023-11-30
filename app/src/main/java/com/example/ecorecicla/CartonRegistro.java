@@ -99,6 +99,6 @@ public class CartonRegistro extends AppCompatActivity {
     public void cleanView(){
         quantity.setText("");
         price.setText("");
-        months.setSelection(0);
+        months.setText("");
     }
 }

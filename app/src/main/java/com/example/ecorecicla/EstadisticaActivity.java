@@ -72,14 +72,10 @@ public class EstadisticaActivity extends AppCompatActivity {
     }
     public void totalRecicladoPapel(ArrayList<Papel>list){
         int total=0;
-        String month="";
-        int max=0;
+
         for (Papel i: list){
             total+=i.getQuantity();
-            if(max<i.getQuantity()){
-                max=i.getQuantity();
-                month=i.getMonth();
-            }
+
         }
         totalPapel.setText(total+" Kg");
 
@@ -87,14 +83,10 @@ public class EstadisticaActivity extends AppCompatActivity {
 
     public void totalRecicladoPlastico(ArrayList<Plastico>list){
         int total=0;
-        String month="";
-        int max=0;
+
         for (Plastico i: list){
             total+=i.getQuantity();
-            if(max<i.getQuantity()){
-                max=i.getQuantity();
-                month=i.getMonth();
-            }
+
         }
         totalPlastico.setText(total+" Kg");
 
@@ -102,14 +94,10 @@ public class EstadisticaActivity extends AppCompatActivity {
 
     public void totalRecicladoCarton(ArrayList<Carton>list){
         int total=0;
-        String month="";
-        int max=0;
+
         for (Carton i: list){
             total+=i.getQuantity();
-            if(max<i.getQuantity()){
-                max=i.getQuantity();
-                month=i.getMonth();
-            }
+
         }
         totalCarton.setText(total+" Kg");
 
