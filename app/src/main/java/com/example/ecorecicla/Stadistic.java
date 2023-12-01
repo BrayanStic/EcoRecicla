@@ -8,16 +8,16 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.ecorecicla.models.Carton;
 import com.example.ecorecicla.models.Papel;
 import com.example.ecorecicla.models.Plastico;
-import com.example.ecorecicla.models.Carton;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class EstadisticaActivity extends AppCompatActivity {
+public class Stadistic extends AppCompatActivity {
 
     ImageView home;
     ImageView atras;
@@ -27,7 +27,7 @@ public class EstadisticaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_estadistica);
+        setContentView(R.layout.activity_stadistic);
 
         home=findViewById(R.id.logoHome);
         atras=findViewById(R.id.atrasFlecha);
@@ -70,6 +70,7 @@ public class EstadisticaActivity extends AppCompatActivity {
             }
         });
     }
+
     public void totalRecicladoPapel(ArrayList<Papel>list){
         int total=0;
 
@@ -80,7 +81,6 @@ public class EstadisticaActivity extends AppCompatActivity {
         totalPapel.setText(total+" Kg");
 
     }
-
     public void totalRecicladoPlastico(ArrayList<Plastico>list){
         int total=0;
 
@@ -114,7 +114,7 @@ public class EstadisticaActivity extends AppCompatActivity {
                 int quantity= Integer.parseInt(data[0]);
                 int price= Integer.parseInt(data[1]);
                 String month= data[2];
-                String userId= "123";
+                String userId= data[3];
                 if (userId.equals(user)){
                     Papel papelObj= new Papel(quantity,price,month,userId);
                     list.add(papelObj);
@@ -140,7 +140,7 @@ public class EstadisticaActivity extends AppCompatActivity {
                 int quantity= Integer.parseInt(data[0]);
                 int price= Integer.parseInt(data[1]);
                 String month= data[2];
-                String userId= "123";
+                String userId= data[3];
                 if (userId.equals(user)){
                     Plastico plasticObj= new Plastico(quantity,price,month,userId);
                     list.add(plasticObj);
@@ -166,7 +166,7 @@ public class EstadisticaActivity extends AppCompatActivity {
                 int quantity= Integer.parseInt(data[0]);
                 int price= Integer.parseInt(data[1]);
                 String month= data[2];
-                String userId= "123";
+                String userId= data[3];
                 if (userId.equals(user)){
                     Carton cartonObj= new Carton(quantity,price,month,userId);
                     list.add(cartonObj);
@@ -206,4 +206,5 @@ public class EstadisticaActivity extends AppCompatActivity {
         }
         return pay;
     }
+
 }

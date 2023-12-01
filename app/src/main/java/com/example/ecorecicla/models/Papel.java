@@ -1,8 +1,9 @@
 package com.example.ecorecicla.models;
 
 public class Papel {
-         private int quantity, price;
-        private String month,idUser;
+        private final String idUser;
+        private int quantity, price;
+        private String month;
 
         public Papel(int quantity, int price, String month, String idUser) {
             this.quantity = quantity;

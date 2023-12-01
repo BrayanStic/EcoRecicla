@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EcoRecicla"
         tools:targetApi="34">
         <activity
+            android:name=".Stadistic"
+            android:exported="false" />
+        <activity
+            android:name=".models.Estadistic"
+            android:exported="false" />
+        <activity
             android:name=".PlasticoRegister"
             android:exported="false" />
         <activity

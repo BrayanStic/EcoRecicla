@@ -27,34 +27,31 @@ public class HomeActivity extends AppCompatActivity {
         conj=findViewById(R.id.buttonConj);
         exit=findViewById(R.id.imageViewExit);
 
-        Intent registerReciclado= new Intent(getApplicationContext(),
-                CategoriaActivity.class);
-
         Intent receive= getIntent();
         String id= receive.getStringExtra("idUser");
 
+        Intent registerReciclado= new Intent(getApplicationContext(),
+                CategoriaActivity.class);
         registerReciclado.putExtra("idUser",id);
 
         Intent statistics_view= new Intent(getApplicationContext(),
-                EstadisticaActivity.class);
+                Stadistic.class);
         statistics_view.putExtra("idUser",id);
 
-        Intent categoria=new Intent(getApplicationContext(), CategoriaActivity.class);
-        Intent estadist=new Intent(getApplicationContext(), EstadisticaActivity.class);
         Intent conjo=new Intent(getApplicationContext(),ConsejosActivity.class);
         Intent salir=new Intent(getApplicationContext(),MainActivity.class);
 
         categ.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(categoria);
+                startActivity(registerReciclado);
             }
         });
 
         estd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(estadist);
+                startActivity(statistics_view);
             }
         });
 

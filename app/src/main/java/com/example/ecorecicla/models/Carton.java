@@ -1,8 +1,10 @@
 package com.example.ecorecicla.models;
 
 public class Carton {
+
+    private final String idUser;
     private int quantity, price;
-    private String month,idUser;
+    private String month;
 
     public Carton(int quantity, int price, String month, String idUser) {
         this.quantity = quantity;
