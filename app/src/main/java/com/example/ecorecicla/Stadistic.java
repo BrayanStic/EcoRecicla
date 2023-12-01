@@ -54,8 +54,8 @@ public class Stadistic extends AppCompatActivity {
         totalRecicladoPlastico(plasticoList);
         totalRecicladoCarton(cartonList);
 
-        int totalPay_value=totalPayPapel(papelList)+totalPayPlastico(plasticoList)+totalPayCarton(cartonList);
-        dineroRecaudado.setText("$ "+totalPay_value+"");
+        int total=totalPayPapel(papelList)+totalPayPlastico(plasticoList)+totalPayCarton(cartonList);
+        dineroRecaudado.setText("$ "+total);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
